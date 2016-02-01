@@ -12,5 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require jquery.sticky.js
+//= require rails.validations
+//= require jquery.color-2.1.2.min.js
 //= require_tree .

@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    title
+      | RovingFox
+    = favicon_link_tag 'favicon.png'
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false
+    = javascript_include_tag 'application', 'data-turbolinks-track' => false
+    = csrf_meta_tags
+  body
+    div class="container"
+      header
+        div class="sticker"
+          div class="header-container"
+            div class="header-logo-and-control-container"
+              div class="top-left-corner-logo"
+                = link_to root_path
+                  = image_tag("logo.png", size: "171x60", alt: "RovingFox")
+              nav
+                = navigation.html_safe
+
+        div class="header-banner-container"
+          div class="header-intro"
+            h1 class="product-h1"
+              | Transaction Monitoring
+            div class="orange-line"
+          
+            p We will monitor your website
+            p so that you know all the important interactions work
+
+        div class="gray-separator-line sticker2"
+
+      div class="content"
+        = yield
+
+      footer
+        div class="gray-separator-line"
+        div class="footer-container"
+        div class="copyright-container"

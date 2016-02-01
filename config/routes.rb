@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  root 'pages#product'
-  get 'pages/pricing'
-  get 'pages/contact'
-  get 'product#request'
+  resources :products
+
+  root 'pages#product', as: :root
+  get 'pricing' => 'pages#pricing', as: :pricing
+  get 'contact' => 'pages#contact', as: :contact
+  post 'product/create' => 'product#create', as: :create_product
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

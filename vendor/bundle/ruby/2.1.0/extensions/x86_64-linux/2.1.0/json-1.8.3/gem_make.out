@@ -1,0 +1,10 @@
+/home/nik/.rvm/rubies/ruby-2.1.3/bin/ruby -r ./siteconf20160201-11399-11k3r39.rb extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+make "DESTDIR=" install
+installing default libraries

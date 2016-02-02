@@ -72,7 +72,7 @@ header ul li a {
 }
 
 .header-banner-container {
-  background: url('banner2.jpg') center no-repeat;
+  background: asset-url("banner2.jpg", image) center no-repeat;
   height: 514px;
 }
 
@@ -170,7 +170,7 @@ div {
   width: 324px;
   height: 219px;
   margin: 24px auto;
-  background: url('human-bubbles.png');
+  background: asset-url("human-bubbles.png", image);
 }
 
 .product-features-container {

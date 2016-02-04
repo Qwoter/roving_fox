@@ -27,7 +27,7 @@ set :puma_worker_timeout, nil
 set :puma_init_active_record, true
 set :puma_preload_app, false
 
-server '54.173.247.89', user: 'deploy', roles: %w{web app db}
+server '52.72.255.185', user: 'deploy', roles: %w{web app db}
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 

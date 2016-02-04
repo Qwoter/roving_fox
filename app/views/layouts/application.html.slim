@@ -20,6 +20,7 @@ html
                 = navigation.html_safe
 
         div class="header-banner-container"
+          /= image_tag("gull.png", size: "184x106", alt: "V", class: "gull")
           div class="header-intro"
             h1 class="product-h1"
               | Transaction Monitoring
@@ -35,5 +36,13 @@ html
 
       footer
         div class="gray-separator-line"
-        div class="footer-container"
-        div class="copyright-container"
+        div class="footer-block"
+          div class="footer-container"
+            div class="footer-phone"
+              | +1 (123) 345 2345
+            div class="footer-line"
+            div class="footer-email"
+              a href="mailto:ales@rovingfox.com?Subject=Hello RovingFox" target="_top"
+                | sales@rovingfox.com
+            div class="footer-copyright"
+              | All rights reserved &#169; ROVINGFOX

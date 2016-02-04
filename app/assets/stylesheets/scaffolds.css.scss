@@ -7,17 +7,47 @@ header {
 }
 
 footer {
-  height: 330px;
+  height: 70px;
   background-color: #000;
 }
 
 .footer-container {
-  height: 260px;
-  background: #111111;
+  height: 60px;
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
 }
 
-.copyright-container {
-  height: 60px;
+.footer-phone {
+  color: #e94c32;
+  font-size: 20px;
+  font-weight: bold;
+  margin: auto 0 auto 0;
+}
+
+.footer-line {
+  width: 1px;
+  height: 28px;
+  background-color: #a1a1a1;
+  margin: auto 0 auto 30px;
+}
+
+.footer-email {
+  color: #fff;
+  font-size: 18px;
+  margin: auto 0 auto 30px;
+}
+
+.footer-copyright {
+  color: #fff;
+  font-size: 18px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+}
+
+.footer-email a {
+  color: #fff;
 }
 
 .header-container {
@@ -243,7 +273,6 @@ h2 {
   width: 749px;
   margin: 45px auto 0 auto;
   display: block;
-  padding-bottom: 60px;
 }
 
 .submit_button {
@@ -306,6 +335,27 @@ h2 {
 
 .label_error_wrapper label {
   float: left;
+}
+
+.or_just_call_us container {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.or_just_call {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.ojc_text {
+  font-size: 18px;
+  color: #000;
+}
+
+.ojc_phone {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e94c32;
 }
 
 .phone_input::-webkit-input-placeholder { /* WebKit, Blink, Edge */

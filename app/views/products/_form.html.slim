@@ -1,5 +1,5 @@
 div class="request-demo-container"
-  = form_for(@product, remote: true, validate: true ) do |f|
+  = form_for(@product, url: "products/create", remote: true, validate: true ) do |f|
     - if @product.errors.any? 
       #error_explanation
       h2

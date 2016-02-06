@@ -1,1 +1,61 @@
+div class="pricing_container gray-block"
+  div class="pricing_block"
+    div class="pricing_headers"
+      div
+        | STANDARD
+      div class="advanced_pricing"
+        | ADVANCED
+      div
+        | ENTERPRISE
+    div class="pricing_body"
+      div class="pricing_body_element body_standard"
+        span class="price"
+          span class="dollar"
+            | $
+          span class="amount"
+            | 39
+          span class="monthly"
+            | /MO
+        div class="orange-line"
+        p 1 million page views
+        p 
+          | 5 
+          span class="dotted"
+            | monitors
+      div class="pricing_body_element body_advanced"
+        span class="price"
+          span class="dollar"
+            | $
+          span class="amount"
+            | 79
+          span class="monthly"
+            | /MO
+        div class="orange-line"
+        p 10 million page views
+        p
+          | 10 
+          span class="dotted"
+            | monitors
+      div class="pricing_body_element body_enterprice"
+        span class="price_call_for_pricing"
+          | CALL FOR PRICING
+        div class="orange-line"
+        p Anything more than that,
+        p 
+          | Call us 
+          span class="phone_in_price orange"
+            | +1 (123) 345 2345
+    div class="pricing_action"
+      div class="standard_button"
+        | REQUEST STANDARD
+      div class="advanced_button"
+        | REQUEST ADVANCED
+      div class="enterprice_button"
+        | REQUEST PRICING
+
+div class="pricing_form_container white-block"
+  h2 Request product
+  div class="orange-line"
+
+  div
   = render 'products/form'

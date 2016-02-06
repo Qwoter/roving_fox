@@ -112,25 +112,38 @@ header ul li a {
 }
 
 .header-intro {
-  text-align: center;
-  padding-top: 189px;
+  text-align: left;
+  padding-top: 183px;
 }
 
-.product-h1 {
-  font-size: 28px;
+.product-block p {
   color: #fff;
-  margin: 0;
-  margin-bottom: 15px;
-}
-
-.header-intro p {
-  font-size: 15px;
+  font-size: 24px;
   font-weight: bold;
-  color: #fff;
 }
 
-.content {
+span.orange {
+  color: #e94c32;
 }
+
+.header-banner-block {
+  width: 760px;
+  margin: auto;
+}
+
+.header-banner-left {
+  width: 184px;
+  margin-top: 205px;
+  float: left;
+}
+
+.header-banner-right {
+  width: 500px;
+  float: left;
+  margin-left: 70px;
+}
+
+
 
 body {
   margin: 0;
@@ -372,4 +385,175 @@ h2 {
 }
 .phone_input:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
   letter-spacing: 2px;
+}
+
+.contact_endpoints_container {
+  height: 240px;
+  text-align: center;
+}
+
+.phone_contacts {
+  font-size: 26px;
+  font-weight: bold;
+  color: #e94c32;
+  padding-top: 74px;
+  padding-bottom: 30px;
+}
+
+.email_contacts {
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+.email_contacts a {
+  color: #000;
+}
+
+.contact_form_container {
+  height: 556px;
+  margin: 60px auto 0 auto;
+  width: 749px;
+}
+
+.pricing_block {
+  width: 749px;
+  height: 284px;
+  position: absolute;
+  left: 0;
+  margin: -70px auto 0 auto;
+  right: 0;
+}
+
+.pricing_container {
+  height: 294px;
+}
+
+.pricing_headers {
+  height: 60px;
+  width: 749px;
+}
+
+.pricing_headers div {
+  float: left;
+  height: 20px;
+  width: 209px;
+  color: #fff;
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #2e2e2e;
+  opacity: 0.9;
+}
+
+.advanced_pricing {
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.sticker {
+  z-index: 4;
+}
+
+.pricing_body {
+  width: 749px;
+  height: 182px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.pricing_body div.pricing_body_element {
+  padding-top: 20px;
+  height: 161px;
+  width: 248px;
+  float: left;
+  border-top: 1px solid #c2c2c2;
+}
+
+.pricing_body div.body_advanced {
+  width: 249px;
+  border-left: 1px solid #c2c2c2;
+  border-right: 1px solid #c2c2c2;
+}
+
+.pricing_body div.body_standard {
+  border-left: 1px solid #c2c2c2;
+}
+
+.pricing_body div.body_enterprice {
+  border-right: 1px solid #c2c2c2;
+}
+
+.pricing_body_element div.orange-line {
+  margin-top: 5px;
+  margin-bottom: 26px;
+}
+
+.price .dollar {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.price .amount {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.price .monthly {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.dotted {
+  border-bottom: 1px dotted #545454;
+}
+
+.price_call_for_pricing {
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+}
+
+.pricing_action {
+  width: 749px;
+  height: 45px;
+}
+
+.pricing_action div {
+  width: 249px;
+  height: 31px;
+  float: left;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding-top: 14px;
+}
+
+.pricing_action div.standard_button {
+  background-color: #2980b9;
+  &:hover {
+    background-color: #216998;
+  }
+}
+
+.pricing_action div.advanced_button {
+  background-color: #27ae60;
+  margin-left: 1px;
+  margin-right: 1px;
+  &:hover {
+    background-color: #20904f;
+  }
+}
+
+.pricing_action div.enterprice_button {
+  background-color: #e94c32;
+  &:hover {
+    background-color: #c6412b;
+  }
+}
+
+.pricing_form_container {
+  padding: 50px 0;
 }

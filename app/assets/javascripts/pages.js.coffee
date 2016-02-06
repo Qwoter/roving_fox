@@ -6,6 +6,12 @@ $(document).ready ->
   $(".sticker2").sticky({topSpacing:60})
 
 $(document).ready ->
+  $(".pricing_action div").click ->
+    $("html, body").animate
+      scrollTop: $(".pricing_form_container").offset().top
+    , 700
+    $("#product_name").focus()
+
   $('#new_product').on('ajax:success', (e, data, status, xhr) ->
     
     $('.submit_button').fadeOut(500, ->

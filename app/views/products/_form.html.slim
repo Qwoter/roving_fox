@@ -16,7 +16,7 @@ div class="request-demo-container"
           = f.text_field(:name, class: 'generic_input', placeholder: "Name")
         .field
           = f.label(:email, 'EMAIL *', class: 'bold_text generic_label')
-          = f.text_field(:email, class: 'generic_input', placeholder: "email@com")
+          = f.text_field(:email, class: 'generic_input', placeholder: "email@gmail.com")
         .field
           = f.label(:phone_number, 'PHONE NUMBER', class: 'generic_label')
           = f.text_field(:phone_number, class: 'generic_input phone_input', placeholder: "___ ___ ____")
@@ -28,7 +28,7 @@ div class="request-demo-container"
             = f.number_field(:product, class: 'generic_input')
         .field
           = f.label(:message, 'MESSAGE', class: 'generic_label')
-          = f.text_area(:message, class: 'text_area_without_product', placeholder: "Hi, i would like to know more about your product.")
+          = f.text_area(:message, class: 'text_area_without_product', placeholder: "Hi, I would like to know more about your product.")
 
     .actions
-      = f.submit('SEND REQUEST', class: "submit_button")
+      = f.submit('SEND MESSAGE', class: "submit_button")

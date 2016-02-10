@@ -67,10 +67,10 @@ Rails.application.configure do
     :address        => "smtp.mailgun.org",
     :domain         => "sandbox3691df15f602464e8dee7c3fca57128b.mailgun.org",
     # :domain         => ENV['domain'],
-    :user_name      => "test_user",
+    :user_name      => "postmaster@sandbox3691df15f602464e8dee7c3fca57128b.mailgun.org",
     # :user_name      => ENV['username'],
     # :password       => ENV['pasername'],
-    :password       => "nikita",
+    :password       => "5d95d8803efc109a3d0b4f11a8f752b1",
     :authentication => :plain
   }
 

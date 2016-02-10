@@ -2,6 +2,7 @@
 lock '3.4.0'
 
 set :application, 'roving_fox'
+set :rails_env, :production
 set :repo_url, 'git@github.com:Qwoter/roving_fox.git'
 set :branch, :master
 set :deploy_to, '/home/deploy/roving_fox'

@@ -27,7 +27,6 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
-    addressable (2.4.0)
     arel (5.0.1.20140414130214)
     builder (3.2.2)
     capistrano (3.4.0)
@@ -77,10 +76,6 @@ GEM
     js_regex (1.0.12)
       regexp_parser (= 0.3.2)
     json (1.8.3)
-    launchy (2.4.3)
-      addressable (~> 2.3)
-    letter_opener (1.4.1)
-      launchy (~> 2.2)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.99)
@@ -174,8 +169,6 @@ DEPENDENCIES
   figaro
   jbuilder (~> 2.0)
   jquery-rails
-  launchy
-  letter_opener
   puma
   rails (= 4.1.6)
   sass-rails (~> 4.0.3)

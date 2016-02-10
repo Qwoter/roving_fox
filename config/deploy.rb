@@ -1,5 +1,6 @@
 # config valid only for current version of Capistrano
 lock '3.4.0'
+require 'sidekiq/capistrano'
 
 set :application, 'roving_fox'
 set :repo_url, 'git@github.com:Qwoter/roving_fox.git'

@@ -1,10 +1,11 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+  http_basic_authenticate_with name: "rovingfox1", password: "rovingfox", except: :create
 
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+    @products = Product.all.reverse
   end
 
   # GET /products/1
@@ -28,6 +29,14 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
+        h = JSON.generate({ 'name'       => @product.name,
+                            'email'      => @product.email,
+                            'phone'      => @product.phone_number,
+                            'message'    => @product.message,
+                            'created_at' => @product.created_at.strftime("%H:%M %d-%m-%Y") })
+
+        PostmanWorker.perform_async(h, 5)
+
         format.html { redirect_to controller: :pages, action: :product, notice: 'Product was successfully created.' }
         format.json { render :show, status: :created, location: @product }
       else

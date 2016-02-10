@@ -43,10 +43,18 @@ gem 'spring',        group: :development
 
 gem 'figaro'
 gem 'puma'
+
+gem 'sidekiq'
+gem 'sinatra', '>= 1.3.0', :require => nil
+
 group :development do
   gem 'capistrano'
+  gem 'capistrano-sidekiq'
   gem 'capistrano3-puma'
   gem 'capistrano-rails', require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rvm'
+
+  gem "letter_opener"
+  gem "launchy"
 end

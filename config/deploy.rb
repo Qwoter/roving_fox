@@ -6,7 +6,7 @@ set :rails_env, :production
 set :repo_url, 'git@github.com:Qwoter/roving_fox.git'
 set :branch, :master
 set :deploy_to, '/home/deploy/roving_fox'
-set :pty, true
+set :pty, false
 set :linked_files, %w{config/database.yml config/application.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
 set :keep_releases, 5

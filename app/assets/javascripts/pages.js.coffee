@@ -6,7 +6,6 @@ $(document).ready ->
   $(".sticker2").sticky({topSpacing:60})
 
 $(document).ready ->
-  $("#product_phone_number").inputmask({"mask": "(999) 999-9999"})
   $(".pricing_action div").click ->
     $("html, body").animate
       scrollTop: $(".pricing_form_container").offset().top

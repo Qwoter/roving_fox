@@ -46,7 +46,6 @@ gem 'puma'
 
 gem 'sidekiq'
 gem 'sinatra', '>= 1.3.0', :require => nil
-gem 'jquery-inputmask-rails'
 
 group :development do
   gem 'capistrano'

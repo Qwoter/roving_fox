@@ -15,8 +15,4 @@
 //= require jquery.sticky.js
 //= require rails.validations
 //= require jquery.color-2.1.2.min.js
-//= require jquery.inputmask
-//= require jquery.inputmask.extensions
-//= require jquery.inputmask.numeric.extensions
-//= require jquery.inputmask.date.extensions
 //= require_tree .
